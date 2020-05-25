@@ -1,0 +1,363 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8">
+	<title>index</title>
+	<meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/azzara.min.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+</head>
+<body data-background-color="bg3">
+	<div class="wrapper">
+		<div class="main-header" data-background-color="light-blue">
+			<div class="logo-header">
+				<div class="head-font" style="font-size: 14">上海维伽信息咨询有限公司</div>
+			</div>
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 head-font">后台管理系统</div>
+				<div class="col-md-4">
+					<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
+						<div class="avatar-sm" style="float: right;">
+							<img src="../img/cat.jpg" alt="..." class="avatar-img rounded-circle">
+						</div>
+					</a>
+					<ul class="dropdown-menu dropdown-user animated fadeIn">
+						<li>
+							<a class="dropdown-item" href="#">Logout</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar">	
+			<div class="sidebar-background"></div>
+			<div class="scroll-wrapper sidebar-wrapper scrollbar-inner" style="position: relative;">
+				<div class="sidebar-wrapper scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 519px;">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="info">
+							<a aria-expanded="true">
+								<span>
+									user1
+									<span class="user-level">超级管理员</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item active">
+							<a href="index.html">
+								<p>首页</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#customMenu">
+								<p>客户信息</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="customMenu">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">客户列表</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">职位审核</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">项目审核</span>
+										</a>
+									</li>
+									<li>
+										<a data-toggle="collapse" href="#interviewAudit">
+											<span class="sub-item">面试审核</span>
+											<span class="caret"></span>
+										</a>
+										<div class="collapse" id="interviewAudit">
+											<ul class="nav nav-collapse subnav">
+												<li>
+													<a href="#">
+														<span class="sub-item">预约审核</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="sub-item">报价审核</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">合同审核</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">模板审核</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#sellDepart">
+								<p>销售部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="sellDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#deliveryDepart">
+								<p>交付部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="deliveryDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#hrDepart">
+								<p>人事部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="hrDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">简历库管理</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">请假审核</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">报销审核</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">内推审核</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#developDepart">
+								<p>开发部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="developDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">数据字典</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#financialDepart">
+								<p>财务部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="financialDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">开票信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">回款记录</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">汇款记录</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">录入工资明细</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#contractManage">
+								<p>合同管理</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="contractManage">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">客户</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">内部</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>考勤管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>团建发布</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>权限管理</p>
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="page-inner">
+					<div class="page-header">
+						<h4 class="page-title">客户列表</h4>
+						<ul class="breadcrumbs">
+							<li class="nav-home">
+								客户信息
+							</li>
+							<li class="separator">
+								<i class="fa fa-angle-right"></i>
+							</li>
+							<li class="nav-item">
+								客户列表
+							</li>
+						</ul>
+					</div>
+					<div class="card">
+						<div class="card-header">
+							<input type="text" class="form-control input-square" id="squareInput" placeholder="客户名称" style="width: 150px; display: inline-block;" > 
+							<button class="btn btn-info btn-sm" style="margin-left:5px">
+								<i class="fa fa-search"></i>搜索</button>
+							<button class="btn btn-info btn-sm" style="float:right"><i class="fa fa-plus"></i>添加</button>
+						</div>
+						<div class="card-body">
+							<table class="table table-striped mt-3">
+								<thead>
+									<tr>
+										<th scope="col">编号</th>
+										<th scope="col">客户</th>
+										<th scope="col">地址</th>
+										<th scope="col">联系人</th>
+										<th scope="col">邮箱</th>
+										<th scope="col">销售负责人</th>
+										<th scope="col">操作</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="cstm : ${cInfoList}">
+										<td th:text="${cstm.cid}"></td>
+										<td th:text="${cstm.cname}"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td>
+											<button class="btn btn-info btn-xs">
+												<i class="fa fa-file"></i>详情
+											</button>
+											<button class="btn btn-success btn-xs">
+											<i class="fa fa-edit"></i>修改</button>
+											<button class="btn btn-danger btn-xs">
+											<i class="fa fa-remove"></i>删除</button>
+										</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+<!--   Core JS Files   -->
+<script src="/js/jquery.3.2.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
