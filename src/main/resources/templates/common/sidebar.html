@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- Sidebar -->
+		<div class="sidebar"  th:fragment="sidebar">	
+			<div class="sidebar-background"></div>
+			<div class="scroll-wrapper sidebar-wrapper scrollbar-inner" style="position: relative;">
+				<div class="sidebar-wrapper scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 519px;">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="info">
+							<a aria-expanded="true">
+								<span>
+									user1
+									<span class="user-level">超级管理员</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="nav-item ">
+							<a href="index.html">
+								<p>首页</p>
+							</a>
+						</li>
+						<li class="nav-item active">
+							<a data-toggle="collapse" href="#customMenu">
+								<p>客户信息</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#sellDepart">
+								<p>销售部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="sellDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#deliveryDepart">
+								<p>交付部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="deliveryDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#hrDepart">
+								<p>人事部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="hrDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">简历库管理</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">岗位一览</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#developDepart">
+								<p>开发部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="developDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">人员信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">数据字典</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#financialDepart">
+								<p>财务部门</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="financialDepart">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">开票信息</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">回款记录</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">汇款记录</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">录入工资明细</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#contractManage">
+								<p>合同管理</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="contractManage">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="#">
+											<span class="sub-item">客户</span>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span class="sub-item">内部</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>考勤管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>团建发布</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>权限管理</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<p>资产管理</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+</body>
+</html>

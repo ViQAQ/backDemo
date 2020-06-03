@@ -1,0 +1,103 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="main-header" data-background-color="light-blue" th:fragment="header">
+		<div class="logo-header">
+			<div class="head-font" style="font-size: 14">XX公司</div>
+		</div>
+		<!-- Navbar Header -->
+		<nav class="navbar navbar-header navbar-expand-lg row">
+			<div class="container-fluid">
+				<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+					<li class="nav-item toggle-nav-search hidden-caret"></li>
+					<li class="nav-item dropdown hidden-caret submenu"><a
+						class="nav-link dropdown-toggle" href="#" id="messageDropdown"
+						role="button" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false"> <i class="fa fa-envelope"></i>
+					</a>
+						<ul class="dropdown-menu messages-notif-box animated fadeIn"
+							aria-labelledby="messageDropdown">
+							<li>
+								<div
+									class="dropdown-title d-flex justify-content-between align-items-center">
+									Messages</div>
+							</li>
+							<li>
+								<div class="scroll-wrapper message-notif-scroll scrollbar-outer"
+									style="position: relative;">
+									<div
+										class="message-notif-scroll scrollbar-outer scroll-content scroll-scrolly_visible"
+										style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 250px;">
+										<div class="notif-center">
+											<a>
+												<div class="notif-content">
+													<span class="subject">人事人员A</span> <span class="block">
+														XXX加入了XX项目 </span> <span class="time">2020-05-28</span>
+												</div>
+											</a> <a>
+												<div class="notif-content">
+													<span class="subject">人事人员B</span> <span class="block">
+														XXX加入了XX项目 </span> <span class="time">2020-05-28</span>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="scroll-element scroll-x scroll-scrolly_visible">
+										<div class="scroll-element_outer">
+											<div class="scroll-element_size"></div>
+											<div class="scroll-element_track"></div>
+											<div class="scroll-bar ui-draggable ui-draggable-handle"
+												style="width: 86px;"></div>
+										</div>
+									</div>
+									<div class="scroll-element scroll-y scroll-scrolly_visible">
+										<div class="scroll-element_outer">
+											<div class="scroll-element_size"></div>
+											<div class="scroll-element_track"></div>
+											<div class="scroll-bar ui-draggable ui-draggable-handle"
+												style="height: 195px; top: 0px;"></div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul></li>
+					<!-- 用户头像部分 -->
+					<li class="nav-item dropdown hidden-caret"><a
+						class="dropdown-toggle profile-pic" data-toggle="dropdown"
+						href="#" aria-expanded="false">
+							<div class="avatar-sm">
+								<img src="../img/cat.jpg" alt="..."
+									class="avatar-img rounded-circle">
+							</div>
+					</a>
+						<ul class="dropdown-menu dropdown-user animated fadeIn">
+							<li>
+								<div class="user-box">
+									<div class="avatar-lg">
+										<img src="../img/cat.jpg" alt="image profile"
+											class="avatar-img rounded">
+									</div>
+									<div class="u-text">
+										<h4>VVV</h4>
+										<span class="user-level">超级管理员</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="dropdown-divider"></div> <a class="dropdown-item"
+								href="#">Account Setting</a>
+								<div class="dropdown-divider"></div> <a class="dropdown-item"
+								href="#">Logout</a>
+							</li>
+						</ul></li>
+
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+	</div>
+</body>
+</html>
